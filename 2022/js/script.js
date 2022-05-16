@@ -72,13 +72,12 @@
       if(scroH > 80){
         $('.navbar').css("height","60px");
         $('.nav-item a').css("font-size","15px");
-        $('.navbar-brand img').css("height","40px");
+        $('.navbar-brand').css("height","40px");
       }else {
         $('.navbar').css("height","80px");
         $('.nav-item a').css("font-size","16px");
-        $('.navbar-brand img').css("height","60px");
+        $('.navbar-brand').css("height","60px");
       }
-
       $('.navbar-collapse').collapse('hide');
     });
     $.fn.shuffle
@@ -102,8 +101,7 @@
       setTimeout(function(){
         $(target).removeClass("d-none animate__fadeOut");
         $("#main-body").css("height",$(target).css("height"));
-        $this.addClass("animate__animated animate__fadeIn");
-
+        $(target).addClass("animate__animated animate__fadeIn");
       }, 1500);
 
       $('html, body').animate({scrollTop: scrollToPosition }, 800, function(target){

@@ -345,6 +345,9 @@ a:after{
   text-align:left;
 }
 
+.dropdown-item{
+    color: #5466d0;
+}
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -517,7 +520,7 @@ a:after{
     animation-delay:0.3s;
   }
 
-  .navbar-brand > img{
+  .navbar-brand a{
     height: 60px;
     transition: all 1s
   }
@@ -542,7 +545,7 @@ a:after{
 @media only screen and (max-width: 1200px) {
   .navbar-collapse{
   	background-color:rgb(255,255,255,0.9);
-    margin-top:3px;
+    margin-top:0px;
     padding:15px;
   }
 }
