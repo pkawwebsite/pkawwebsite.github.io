@@ -4,87 +4,7 @@ body {
 }
 
 
-.content {
-  min-height: 300px;
-}
-.large-icon {
-  font-size: 13em !important;
-}
-.contact .contact-address {
-  padding: 0 1.5rem;
-}
-.navbar .mod-languages {
-  padding-bottom: 0.425rem;
-  padding-top: 0.425rem;
-}
-.lang-inline {
-  list-style: outside none none;
-  margin: 0;
-}
-.lang-inline > li {
-  display: inline;
-  margin-left: 8px;
-}
-.login {
-  margin: 0 auto;
-  max-width: 330px;
-  padding-top: 1em;
-}
-.tags.inline {
-  padding-left: 0;
-}
-.tags.inline li {
-  display: inline;
-}
-.item-image {
-  margin-bottom: 20px;
-}
 
-.autocomplete-suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
-
-.autocomplete-suggestion {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-
-}
-
-.autocomplete-suggestion:hover, .autocomplete-suggestion:focus {
-  color: #16181b;
-  text-decoration: none;
-  background-color: #f8f9fa;
-}
-
-.autocomplete-suggestion.active, .autocomplete-suggestion:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: #007bff;
-}
 
 html,body{
   background-color:	#e5e7f6;
@@ -299,18 +219,15 @@ a:after{
 
 .navbar{
   background-color:rgb(255,255,255,0.6);
-  height:80px;
   animation-duration: 2s;
   animation-delay:0.5s;
 }
 
 .navbar-brand > img{
-  height: 60px;
   transition: all 1s
 }
 
 .navbar:hover{
-  height:80px;
   background-color:rgb(255,255,255,0.9);
   font-size: 16px;
 }

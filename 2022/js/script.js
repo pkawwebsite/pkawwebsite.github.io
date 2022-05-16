@@ -69,15 +69,15 @@
       else {
         $('#go-top-btn').css("right", "-50px");
       }
-      if(scroH > 80){
-        $('.navbar').css("height","60px");
-        $('.nav-item a').css("font-size","15px");
-        $('.navbar-brand').css("height","40px");
-      }else {
-        $('.navbar').css("height","80px");
-        $('.nav-item a').css("font-size","16px");
-        $('.navbar-brand').css("height","60px");
-      }
+//      if(scroH > 80){
+//        $('.navbar').css("height","60px");
+//        $('.nav-item a').css("font-size","15px");
+//        $('.navbar-brand').css("height","40px");
+//      }else {
+//        $('.navbar').css("height","80px");
+//        $('.nav-item a').css("font-size","16px");
+//        $('.navbar-brand').css("height","60px");
+//      }
       $('.navbar-collapse').collapse('hide');
     });
     $.fn.shuffle
