@@ -88,7 +88,7 @@
       var scrollToPosition = window.innerHeight - headerHeight;
       var $this = $(this);
       var target_height = $this.css("height");
-      if(target == "#")
+      if(target == "#" || target[0] != "#")
         return;
       $('.main-module').each(function(){
         if(!$(this).hasClass("d-none")){
