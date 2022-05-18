@@ -80,8 +80,8 @@
 //      }
       $('.navbar-collapse').collapse('hide');
     });
-    $.fn.shuffle
-    $('.nav-link, .news-link, .dropdown-item').bind("click", function(e) {
+
+    $('.nav-link, .news-link, .dropdown-item').bind("click", function() {
       var headerHeight = $(".navbar").height();
       var target = $(this).attr("href"); //Get the target
       var scrollToPosition = window.innerHeight - headerHeight;
@@ -104,12 +104,9 @@
         $(target).addClass("animate__animated animate__fadeIn");
       }, 1500);
 
-      $('html, body').animate({scrollTop: scrollToPosition }, 800, function(target){
-         window.location.hash = target;
-        });
+      $('html, body').animate({scrollTop: scrollToPosition }, 800);
 //      $('html, body').animate({scrollTop: 0}, 800);
 
-      e.preventDefault();
     });
 
     $('.navbar').hover(function(){
