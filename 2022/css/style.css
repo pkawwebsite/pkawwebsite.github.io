@@ -86,11 +86,11 @@ html,body{
 .main-module{
   height:auto;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 0s;
 }
 
 #main-body{
-  transition:all 1.5s 0.5s;
+  transition:all 1s;
 }
 
 .article{

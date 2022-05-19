@@ -89,24 +89,27 @@
       var target_height = $this.css("height");
       if(target == "#" || target[0] != "#")
         return;
-      $('.main-module').each(function(){
-        if(!$(this).hasClass("d-none")){
-            $(this).addClass("animate__animated animate__fadeOut");
-            $temp = $(this)
-            setTimeout(function(){
-                $temp.addClass("d-none");
-            }, 1500);
-        }
-      });
+//      $('.main-module').each(function(){
+//        if(!$(this).hasClass("d-none")){
+//            $(this).addClass("animate__animated animate__fadeOut");
+//            $temp = $(this)
+//            setTimeout(function(){
+//                $temp.addClass("d-none");
+//            }, 1500);
+//        }
+//      });
+      $('.show-panel').addClass("animate__animated animate__fadeOut");
+      setTimeout(function(){
+          $('.show-panel').addClass("d-none");
+          $('.show-panel').removeClass("show-panel");
+      }, 1000);
       setTimeout(function(){
         $(target).removeClass("d-none animate__fadeOut");
         $("#main-body").css("height",$(target).css("height"));
-        $(target).addClass("animate__animated animate__fadeIn");
-      }, 1500);
+        $(target).addClass("animate__animated animate__fadeIn show-panel");
+      }, 1000);
 
       $('html, body').animate({scrollTop: scrollToPosition }, 800);
-//      $('html, body').animate({scrollTop: 0}, 800);
-
     });
 
     $('.navbar').hover(function(){
