@@ -3,15 +3,15 @@ body {
   overflow-x:hidden;
 }
 table.table-bordered{
-    border:0.1px solid #5466d0;
+    border:2px solid #5466d0;
     margin-top:20px;
   }
 
 table.table-bordered > thead > tr > th{
-    border:0.1px solid #5466d0;
+    border:2px solid #5466d0;
 }
 table.table-bordered > tbody > tr > td{
-    border:0.1px solid #5466d0;
+    border:2px solid #5466d0;
 }
 
 
