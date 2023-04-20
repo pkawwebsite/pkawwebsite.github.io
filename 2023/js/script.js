@@ -16,51 +16,6 @@
 
 
   $(document).ready(function(){
-	document.addEventListener("touchstart", function() {},false);
-    $('.control-group').addClass('form-group');
-    $('.control-group input[type=text]').addClass('form-control');
-    $('.control-group input[type=email]').addClass('form-control');
-    $('.control-group input[type=password]').addClass('form-control');
-    $('.control-group input[type=search]').addClass('form-control');
-    $('.control-group input[type=url]').addClass('form-control');
-    $('.control-group input[type=tel]').addClass('form-control');
-    $('.control-group input[type=number]').addClass('form-control');
-    $('.control-group input[type=date]').addClass('form-control');
-    $('.control-group input[type=datetime-local]').addClass('form-control');
-    $('.control-group input[type=month]').addClass('form-control');
-    $('.control-group input[type=week]').addClass('form-control');
-    $('.control-group input[type=time]').addClass('form-control');
-    $('.control-group input[type=color]').addClass('form-control');
-    $('.control-group select').addClass('form-control');
-    $('.control-group textarea').addClass('form-control');
-    $('.control-group input[type=file]').addClass('form-control-file');
-    //$('.control-group input[type=radio]').addClass('form-check-input'); //Would require reformatting of html-structure
-    $('.control-group input[type=checkbox]').addClass('form-check-input');
-
-    $('.form-group input[type=text]').addClass('form-control');
-    $('.form-group input[type=email]').addClass('form-control');
-    $('.form-group input[type=password]').addClass('form-control');
-    $('.form-group input[type=search]').addClass('form-control');
-    $('.form-group input[type=url]').addClass('form-control');
-    $('.form-group input[type=tel]').addClass('form-control');
-    $('.form-group input[type=number]').addClass('form-control');
-    $('.form-group input[type=date]').addClass('form-control');
-    $('.form-group input[type=datetime-local]').addClass('form-control');
-    $('.form-group input[type=month]').addClass('form-control');
-    $('.form-group input[type=week]').addClass('form-control');
-    $('.form-group input[type=time]').addClass('form-control');
-    $('.form-group input[type=color]').addClass('form-control');
-    $('.form-group select').addClass('form-control');
-    $('.form-group textarea').addClass('form-control');
-    $('.form-group input[type=file]').addClass('form-control-file');
-    $('.form-check input[type=checkbox]').addClass('form-check-input');
-    //Contact form
-    $('.form-inline select').addClass('form-control form-control-sm');
-    // Support for bootstrap 4 markup also in custom UI elements, which are designed for Bootstrap 2.
-    $('table').addClass('table');
-    $('.label').addClass('badge');
-    $('.label-warning').addClass('badge-warning');
-
     $(document).scroll(function() {
       var scroH = $(document).scrollTop();
       if(scroH >500){
@@ -113,17 +68,18 @@
     });
 
     $('.navbar').hover(function(){
-      if($(document).scrollTop() > 100){
-        $('.navbar').css("height","80px");
-        $('.nav-item a').css("font-size","16px");
-        $('.navbar-brand img').css("height","60px");
-      }
+//      if($(document).scrollTop() > 100){
+//        $('.navbar').css("height","80px");
+//        $('.nav-item a').css("font-size","16px");
+//        $('.navbar-brand img').css("height","60px");
+//      }
     }, function(){
-      if($(document).scrollTop() > 100){
-        $('.navbar').css("height","60px");
-        $('.nav-item a').css("font-size","15px");
-        $('.navbar-brand img').css("height","40px");
-      }
+//      if($(document).scrollTop() > 100){
+//        $('.navbar').css("height","60px");
+//        $('.nav-item a').css("font-size","15px");
+//        $('.navbar-brand img').css("height","40px");
+//      }
+      $('.navbar-collapse').collapse('hide');
     });
 
     $('#go-top-btn').bind("click", function(e) {
