@@ -3,15 +3,15 @@ body {
   overflow-x:hidden;
 }
 table.table-bordered{
-  border:2px solid #5466d0;
+  border:2px solid #BE1C08;
   margin-top:20px;
 }
 
 table.table-bordered > thead > tr > th{
-  border:2px solid #5466d0;
+  border:2px solid #BE1C08;
 }
 table.table-bordered > tbody > tr > td{
-  border:2px solid #5466d0;
+  border:2px solid #BE1C08;
 }
 
 
@@ -49,7 +49,7 @@ html,body{
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
-  background-color: rgba(84, 102, 208,0.6);
+  background-color: rgba(190, 28, 8,0.6);
   height: text-height;
   padding: 30px;
   animation-duration: 2s;
@@ -65,7 +65,7 @@ html,body{
   z-index: 99;
   font-size: 18px;
   background-color: #ffffff;
-  color: #5466d0;
+  color: #BE1C08;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.5s;
@@ -79,7 +79,7 @@ html,body{
 }
 
 #go-top-btn:hover {
-  background-color: #5466d0;
+  background-color: #BE1C08;
   color: #ffffff;
 }
 
@@ -87,7 +87,7 @@ html,body{
   background-color: rgba(255,255,255,0.6);
   padding: 30px 30px 30px 30px;
   margin: 0px -5px 20px -5px;
-  color: #5466d0;
+  color: #BE1C08;
   animation-duration: 1s;
   animation-delay: 0.5s;
 }
@@ -111,7 +111,7 @@ html,body{
   text-align: left;
   padding: 30px 20px 30px 20px;
   margin: 0px -5px 20px -5px;
-  color: #5466d0;
+  color: #BE1C08;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
 }
@@ -129,7 +129,7 @@ a:before {
 
 a:hover {
   color: #ffffff;
-  background-color: #5466d0;
+  background-color: #BE1C08;
 }
 
 a:after{
@@ -144,14 +144,14 @@ a:after{
   height: 1px;
   content: '.';
   color: transparent;
-  background: #5466d0;
+  background: #BE1C08;
   visibility: none;
   opacity: 0;
   z-index: -1;
 }
 
 .section-title{
-  border-bottom: 1px solid #5466d0;
+  border-bottom: 1px solid #BE1C08;
   padding-bottom:10px;
   text-align:center;
 }
@@ -165,7 +165,7 @@ a:after{
   margin-top: 80px;
   height:300px;
   position:relative;
-  background-color:rgba(84, 102, 208, 0.5);
+  background-color:rgba(190, 28, 8, 0.5);
   color:white;
   animation-duration: 2s;
   animation-delay:1s;
@@ -211,7 +211,7 @@ a:after{
 .footer{
   height: 80px;
   background-color:rgb(255,255,255,0.6);
-  color: #5466d0;
+  color: #BE1C08;
   font-weight:bold;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ a:after{
   height: 1px;
   content: '.';
   color: transparent;
-  background: #5466d0;
+  background: #BE1C08;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -272,7 +272,7 @@ a:after{
 }
 
 .dropdown-item{
-  color: #5466d0;
+  color: #BE1C08;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -294,10 +294,10 @@ a:after{
   transition: all 0.5s;
 }
 .nav-item i{
-  color: #5466d0;
+  color: #BE1C08;
 }
 .nav-item a{
-  color: #5466d0;
+  color: #BE1C08;
   font-size: 16px;
   font-weight: bold;
   transition: all 1s;
@@ -307,7 +307,7 @@ a:after{
 
 .nav-item a:hover {
   color: #ffffff;
-  background-color: #5466d0;
+  background-color: #BE1C08;
 }
 
 .nav-item a:hover:after {
@@ -383,7 +383,7 @@ a:after{
 }
 
 .spinner-blue{
-  background-color:#5466d0;
+  background-color:#BE1C08;
 }
 
 #main-body{
@@ -393,14 +393,14 @@ a:after{
 .btn{
   text-decoration:none;
   border: solid 1px;
-  color:#5466d0;
+  color:#BE1C08;
   transition:1s;
   font-weight:bold;
 }
 
 .btn:hover{
   color:white;
-  background-color:#5466d0;
+  background-color:#BE1C08;
 }
 
 .logo img{
@@ -432,7 +432,7 @@ a:after{
     top: 50%;
     transform: translateY(-50%);
     bottom: initial;
-    background-color: rgba(84, 102, 208,0.6);
+    background-color: rgba(190, 28, 8,0.6);
     padding: 30px;
     height: text-height;
   }
