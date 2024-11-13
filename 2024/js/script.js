@@ -11,9 +11,32 @@
     setTimeout(function(){
       $('.loading').css('display','none');
     }, 1000);
+    var query = window.location.href;
+    var vars = query.split("#");
+    if(vars.length>1){
+      var target = $('#'+vars[1]); //Get the target
+      $('.show-panel').addClass("animate__animated animate__fadeOut");
+      setTimeout(function(){
+          $('.show-panel').addClass("d-none");
+          $('.show-panel').removeClass("show-panel");
+      }, 1000);
+      setTimeout(function(){
+        $(target).removeClass("d-none animate__fadeOut");
+        $("#main-body").css("height",$(target).css("height"));
+        $(target).addClass("animate__animated animate__fadeIn show-panel");
+      }, 1000);
+    }
   }
-
-
+  function getQueryVariable(variable){
+    var query = window.location.search.substring(1);
+    console.log(query)
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
+  }
 
   $(document).ready(function(){
     $(document).scroll(function() {
@@ -44,15 +67,6 @@
       var target_height = $this.css("height");
       if(target == "#" || target[0] != "#")
         return;
-//      $('.main-module').each(function(){
-//        if(!$(this).hasClass("d-none")){
-//            $(this).addClass("animate__animated animate__fadeOut");
-//            $temp = $(this)
-//            setTimeout(function(){
-//                $temp.addClass("d-none");
-//            }, 1500);
-//        }
-//      });
       $('.show-panel').addClass("animate__animated animate__fadeOut");
       setTimeout(function(){
           $('.show-panel').addClass("d-none");
@@ -132,6 +146,7 @@
 
   });
 })(jQuery);
+
 
 
 
