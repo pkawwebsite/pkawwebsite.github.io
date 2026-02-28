@@ -169,6 +169,7 @@ function loading_complete() {
     const header = document.querySelector('#header');
     const main = document.querySelector('main');
     const footer = document.querySelector('footer');
+    const main_banner = document.querySelector('#banner-title');
     const main_banner_left = document.querySelector('.banner-title-left');
     const main_banner_name = document.querySelector('.banner-title-line-name');
     const main_banner_loc = document.querySelector('.banner-title-line-loc');
@@ -190,36 +191,46 @@ function loading_complete() {
         document.querySelector('html').style.overflowY = 'auto';
         setTimeout(() => {
             if (banner) banner.style.opacity = 1;
-            if (nav) nav.style.opacity = 1;
-            if (header) header.style.opacity = 1;
+            // if (nav) nav.style.opacity = 1;
+            // if (header) header.style.opacity = 1;
             if (main) main.style.opacity = 1;
             if (footer) footer.style.opacity = 1;
-        }, 100);
+            // if (main_banner) main_banner.style.opacity = 1;
+        }, 500);
+
+        setTimeout(() => {
+            // if (banner) banner.style.opacity = 1;
+            if (nav) nav.style.opacity = 1;
+            if (header) header.style.opacity = 1;
+            // if (main) main.style.opacity = 1;
+            // if (footer) footer.style.opacity = 1;
+            if (main_banner) main_banner.style.opacity = 1;
+        }, 1000);
 
         setTimeout(() => {
             if (main_banner_left) {
                 main_banner_left.style.opacity = 1;
                 main_banner_left.style.left = 0;
             }
-        }, 1000);
+        }, 1500);
         setTimeout(() => {
             if (main_banner_name) {
                 main_banner_name.style.opacity = 1;
                 main_banner_name.style.right = 0;
             }
-        }, 2000);
+        }, 2500);
         setTimeout(() => {
             if (main_banner_loc) {
                 main_banner_loc.style.opacity = 1;
                 main_banner_loc.style.bottom = 0;
             }
-        }, 3000);
+        }, 3500);
         setTimeout(() => {
             if (main_banner_date) {
                 main_banner_date.style.opacity = 1;
                 main_banner_date.style.bottom = 0;
             }
-        }, 4000);
+        }, 4500);
     }
 
     loaderPage.addEventListener('transitionend', handleLoaderTransitionEnd);

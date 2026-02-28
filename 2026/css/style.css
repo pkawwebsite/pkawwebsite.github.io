@@ -149,10 +149,9 @@ body {
 main,
 #banner,
 #header,
-nav,
 footer {
     opacity: 0;
-    transition: all 0.5s ease-in;
+    transition: opacity 0.5s ease-in;
 }
 
 main {
@@ -198,7 +197,8 @@ section.visible {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: top 3s;
+    opacity: 0;
+    transition: top 3s, opacity 0.5s ease-in;
 }
 
 .nav-container {
@@ -370,6 +370,8 @@ section.visible {
     justify-content: start;
     align-items: center;
     background-color: var(--second-color-opacity);
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 #banner-title div {
