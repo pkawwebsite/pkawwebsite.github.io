@@ -191,19 +191,21 @@ function loading_complete() {
         document.querySelector('html').style.overflowY = 'auto';
         setTimeout(() => {
             if (banner) banner.style.opacity = 1;
+            if (nav) nav.style.opacity = 1;
+            if (header) header.style.opacity = 1;
             // if (nav) nav.style.opacity = 1;
             // if (header) header.style.opacity = 1;
-            if (main) main.style.opacity = 1;
-            if (footer) footer.style.opacity = 1;
+            
             // if (main_banner) main_banner.style.opacity = 1;
         }, 500);
 
         setTimeout(() => {
             // if (banner) banner.style.opacity = 1;
-            if (nav) nav.style.opacity = 1;
-            if (header) header.style.opacity = 1;
+            
             // if (main) main.style.opacity = 1;
             // if (footer) footer.style.opacity = 1;
+            if (main) main.style.opacity = 1;
+            if (footer) footer.style.opacity = 1;
             if (main_banner) main_banner.style.opacity = 1;
         }, 1000);
 
