@@ -175,7 +175,7 @@ function loading_complete() {
     const main_banner_loc = document.querySelector('.banner-title-line-loc');
     const main_banner_date = document.querySelector('.banner-title-line-date');
     const titleElement = document.querySelector('title');
-    titleElement.textContent = "PKAW 2026";
+    // titleElement.textContent = "PKAW 2026";
 
     if (loaderPage) loaderPage.style.opacity = 0;
 
