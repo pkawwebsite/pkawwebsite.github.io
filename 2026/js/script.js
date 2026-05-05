@@ -282,8 +282,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (scroH > 500) {
             goTopBtn.style.opacity = "1";
+            goTopBtn.style.cursor = "pointer";
         } else {
             goTopBtn.style.opacity = "0";
+            goTopBtn.style.cursor = "default";
         }
 
     }
