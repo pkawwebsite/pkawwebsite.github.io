@@ -151,7 +151,7 @@ main,
 #header,
 footer {
     opacity: 0;
-    transition: opacity 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 main {
@@ -159,7 +159,7 @@ main {
     min-height: calc(100vh - 500px - 80px);
 }
 
-section {
+section .container {
     opacity: 0;
     transform: translateY(50px);
     transform: scale(0.9);
@@ -168,7 +168,7 @@ section {
         transform 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-section.visible {
+section .container.visible {
     opacity: 1;
     transform: translateY(0);
     transform: scale(1);
@@ -199,11 +199,12 @@ section.visible {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: top 3s, opacity 0.5s ease-in;
+    ;
 }
 
 .nav-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 75px;
     padding: 0 10px;
 }
@@ -235,7 +236,6 @@ section.visible {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    margin-top: 10px;
     padding: 5px;
     list-style-type: none;
 }
@@ -271,7 +271,7 @@ section.visible {
     width: 100%;
     max-height: 0;
     margin: 0;
-    /* margin-top: 10px; */
+    margin-top: 10px;
     padding: 0;
     opacity: 0;
     overflow: hidden;
@@ -364,45 +364,39 @@ section.visible {
     max-width: 1024px;
     top: 40%;
     left: 50%;
-    padding: 10px;
-    /* padding: 20px; */
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
-    background-color: var(--second-color-opacity);
-    opacity: 0;
-    transition: opacity 1s ease;
 }
 
 #banner-title div {
-    /* width: max-content; */
+    width: max-content;
     max-width: 100%;
     /* border: 1px solid black; */
-    /* text-align: justify; */
+    text-align: justify;
     display: flex;
     position: relative;
     flex-direction: column;
-    /* padding: 10px; */
-    /* margin-top: -20px; */
+    padding: 10px;
+    margin-top: -20px;
 }
 
 .banner-title-left span {
     display: block;
-    color: var(--primary-color);
     /* border: 1px solid black; */
+    color: var(--primary-color);
     flex-grow: 1;
     flex-basis: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    /* margin: -0.5rem; */
-    /* text-transform: uppercase; */
-    text-align: center;
+    font-size: 2rem;
+    margin: -0.5rem;
+    text-transform: uppercase;
 }
 
 .banner-title-line-1 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .banner-title-line-2 {
@@ -437,7 +431,7 @@ section.visible {
 
 .banner-title-line-name {
     position: relative;
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin: -0.5rem;
     opacity: 0;
@@ -455,7 +449,6 @@ section.visible {
     opacity: 0;
     bottom: -50px;
     transition: all 1s ease;
-
 }
 
 section {
@@ -608,13 +601,6 @@ footer {
     background: #000000;
     padding: 20px 0;
     height: 80px;
-    position: relative;
-}
-
-footer div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .header {
@@ -643,6 +629,15 @@ footer div {
 
 #header-title h1 {
     font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin: 0;
+    color: var(--second-color);
+}
+
+#header-title h3 {
+    margin: 0;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: var(--second-color);
@@ -706,7 +701,8 @@ footer div {
 
 .chair-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 70%);
+    justify-content: center;
     gap: 20px;
 }
 
@@ -730,7 +726,12 @@ footer div {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor; */
+    transform: scale(1);
     transition: all 0.5s;
+}
+
+.img-frame img:hover {
+    transform: scale(1.1);
 }
 
 .text-frame {
@@ -820,10 +821,208 @@ button a:hover {
     text-decoration: none;
 }
 
+
 #pc {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+}
+
+.keynote-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+
+}
+
+.keynote-img {
+    width: 70%;
+}
+
+.keynote-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.keynote-speaker {
+    width: 100%;
+}
+
+.keynote-text {
+    width: 100%;
+    text-align: justify;
+}
+
+.keynote-speaker .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px !important;
+    margin: 25px 0 25px 0;
+    text-align: justify;
+}
+
+.keynote-speaker .name {
+    font-weight: 500;
+}
+
+.keynote-tags {
+    display: flex;
+    width: 100%;
+    /* justify-items: start; */
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: var(--section-color);
+    color: var(--second-color);
+    border: 1px solid #cbd5e1;
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#keynotes-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+#keynotes-container .keynote-img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+#keynotes-container .keynote-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-keynote-info {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--second-color);
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.besc-wrap {
+    font-family: 'Open Sans', sans-serif;
+    color: #545454;
+    padding: 1.5rem 0;
+}
+
+.besc-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.besc-table thead tr {
+    background-color: #215e60;
+    color: #eaf4f4;
+}
+
+.besc-table thead th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 12px 18px;
+    text-align: left;
+}
+
+.besc-table thead th.price-col {
+    text-align: right;
+}
+
+.besc-table tbody tr {
+    border-bottom: 1px solid #d8ecec;
+    transition: background 0.2s;
+}
+
+.besc-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.besc-table tbody tr:nth-child(even) {
+    background-color: #f5fbfb;
+}
+
+.besc-table tbody tr:hover {
+    background-color: #eaf4f4;
+}
+
+.besc-table td {
+    padding: 14px 18px;
+    vertical-align: middle;
+}
+
+.cat-name {
+    font-weight: 600;
+    color: #545454;
+}
+
+.cat-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 9px;
+    border-radius: 20px;
+    margin-left: 7px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.badge-full {
+    background-color: #2A577C;
+    color: #eaf4f4;
+}
+
+.badge-student {
+    background-color: #215e60;
+    color: #eaf4f4;
+}
+
+.price-early {
+    text-align: right;
+    color: #f36b31;
+    font-weight: 700;
+}
+
+.price-regular {
+    text-align: right;
+    color: #545454;
+}
+
+.besc-note {
+    font-size: 13px;
+    color: #888;
+    margin-top: 1rem;
+    border-left: 3px solid #215e60;
+    padding-left: 10px;
+    font-style: italic;
 }
 
 @media screen and (min-width: 768px) {
@@ -867,17 +1066,40 @@ button a:hover {
         gap: 50px;
     }
 
-    .banner-title-left span {
-        font-size: 2.2rem;
+    .keynote-info {
+        overflow: hidden;
+        display: block;
     }
 
-    .banner-title-line-name {
-        font-size: 2rem;
+    .keynote-img {
+        width: 30%;
+        float: left;
+        margin-right: 1.5rem;
+        overflow: hidden;
     }
 
-    .banner-title-line-loc,
-    .banner-title-line-date {
-        font-size: 1.8rem;
+    .keynote-img>img {
+        display: block;
+        height: auto;
+        transform: scale(1);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .keynote-img>img:hover {
+        transform: scale(1.05);
+    }
+
+    .keynote-speaker {
+        width: 100%;
+    }
+
+    .keynote-tags {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    #keynotes-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -904,11 +1126,11 @@ button a:hover {
     }
 
     .banner-title-left span {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .banner-title-line-name {
-        font-size: 2.5rem;
+        font-size: 4.8rem;
     }
 
     .banner-title-line-loc,
@@ -929,20 +1151,20 @@ button a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* .chair-container {
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: auto;
-        padding-bottom: 15px;
+    #keynotes-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .committee-chair {
-        flex: 0 0 30%;
-        max-width: none;
-        margin-bottom: 20px;
-    } */
+    .main-keynote-info {
+        bottom: -100px;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .main-keynote-panel:hover .main-keynote-info {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 1080px) {
@@ -954,9 +1176,40 @@ button a:hover {
         font-size: 20px;
     }
 
+    #banner-title {
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        top: 50%;
+    }
+
+    #banner-title div {
+        flex: 1;
+    }
+
+    .banner-title-left span {
+        font-size: 2.8rem;
+    }
+
+    .banner-title-right span {
+        text-align: left;
+    }
+
+    .banner-title-line-name {
+        font-size: 5rem;
+        margin: -1.5rem -0.5rem;
+    }
+
+    .banner-title-line-loc,
+    .banner-title-line-date {
+        font-size: 2rem;
+    }
+
     .topics {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
 }
 
 @media screen and (min-width: 1280px) {
@@ -1049,7 +1302,7 @@ button a:hover {
     }
 
     .dropdown:hover .dropdown-menu {
-        max-height: 500px;
+        max-height: 600px;
         opacity: 1;
     }
 

@@ -455,7 +455,7 @@ section.visible {
     opacity: 0;
     bottom: -50px;
     transition: all 1s ease;
-
+    
 }
 
 section {
@@ -820,11 +820,6 @@ button a:hover {
     text-decoration: none;
 }
 
-#pc {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-}
 
 @media screen and (min-width: 768px) {
     .container {
@@ -859,7 +854,7 @@ button a:hover {
     #go-top-btn {
         right: 50px;
     }
-
+    
     .venue {
         display: flex;
         flex-direction: row;
@@ -923,10 +918,6 @@ button a:hover {
     .button-div {
         flex-direction: row;
         gap: 30px;
-    }
-
-    #pc {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     /* .chair-container {

@@ -820,11 +820,6 @@ button a:hover {
     text-decoration: none;
 }
 
-#pc {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-}
 
 @media screen and (min-width: 768px) {
     .container {
