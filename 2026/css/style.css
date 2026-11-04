@@ -826,6 +826,42 @@ button a:hover {
     gap: 16px;
 }
 
+.speaker-profile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.speaker-photo {
+    width: 70%;
+}
+
+.speaker-photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.speaker-summary {
+    width: 100%;
+}
+
+.speaker-content {
+    width: 100%;
+    text-align: justify;
+}
+
+.speaker-summary .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 35px !important;
+    margin: 25px 0 25px 0;
+    text-align: justify;
+}
+
+.speaker-summary .name {
+    font-weight: 500;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -865,6 +901,33 @@ button a:hover {
         flex-direction: row;
         justify-content: space-between;
         gap: 50px;
+    }
+
+    .speaker-profile {
+        overflow: hidden;
+        display: block;
+    }
+
+    .speaker-photo {
+        width: 30%;
+        float: left;
+        margin-right: 1.5rem;
+        overflow: hidden;
+    }
+
+    .speaker-photo>img {
+        display: block;
+        height: auto;
+        transform: scale(1);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .speaker-photo>img:hover {
+        transform: scale(1.05);
+    }
+
+    .speaker-summary {
+        width: 100%;
     }
 
     .banner-title-left span {

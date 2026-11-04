@@ -1,0 +1,139 @@
+.keynote-section {
+    padding: 54px 30px 76px;
+    background: #ffffff;
+}
+
+.keynote-layout {
+    display: grid;
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+}
+
+.keynote-portrait-frame {
+    margin: 0;
+    overflow: hidden;
+    background: #eaf4f4;
+}
+
+.keynote-portrait {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.keynote-header {
+    padding: 2px 0 30px;
+    border-bottom: 1px solid #d6e3e3;
+}
+
+.keynote-header h1 {
+    margin: 0 0 16px;
+    color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 2.35rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.keynote-speaker {
+    margin: 0 0 4px;
+    color: var(--section-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.22rem;
+    font-weight: 700;
+}
+
+.keynote-affiliation {
+    margin: 0;
+    color: #626262;
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+
+.keynote-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 18px;
+}
+
+.keynote-badges span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 5px 13px;
+    border-radius: 999px;
+    color: #ffffff;
+    background: var(--section-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.keynote-copy {
+    margin-top: 30px;
+}
+
+.keynote-copy h2 {
+    margin: 0 0 12px;
+    color: var(--section-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.28rem;
+    font-weight: 800;
+}
+
+.keynote-copy p {
+    margin: 0 0 18px;
+    color: #4f4f4f;
+    font-size: 0.96rem;
+    line-height: 1.75;
+    text-align: left;
+}
+
+.keynote-copy p:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .keynote-layout {
+        grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+        gap: 34px;
+    }
+
+    .keynote-section {
+        padding-top: 44px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .keynote-section {
+        padding: 36px 20px 56px;
+    }
+
+    .keynote-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .keynote-speaker-column {
+        width: min(100%, 380px);
+        margin: 0 auto;
+    }
+
+    .keynote-header {
+        padding-bottom: 24px;
+    }
+
+    .keynote-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .keynote-copy {
+        margin-top: 26px;
+    }
+}
